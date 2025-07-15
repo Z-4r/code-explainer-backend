@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'code_explainer_backed.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'code_explainer_backend.settings')
 
 application = get_wsgi_application()
