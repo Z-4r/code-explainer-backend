@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: code-explainer-backend
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn code_explainer_backend.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: code_explainer_backend.settings
+      - key: GOOGLE_API_KEY
+        value: YOUR_ACTUAL_API_KEY_SHOULD_BE_ADDED_IN_RENDER_DASHBOARD
