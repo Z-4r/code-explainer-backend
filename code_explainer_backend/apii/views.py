@@ -6,8 +6,9 @@ import google.generativeai as genai
 import ast
 import subprocess
 import tempfile
+from django.conf import settings
 
-genai.configure(api_key="AIzaSyCPX2ec_fLRVWud9IQ8tCuG6iS-YwRdft0")
+genai.configure(api_key=settings.GOOGLE_API_KEY)
 model = genai.GenerativeModel('gemini-2.5-pro')
 
 @api_view(['POST'])
