@@ -1,5 +1,5 @@
 """
-ASGI config for code_explainer_backed project.
+ASGI config for code_explainer_backend project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'code_explainer_backed.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'code_explainer_backend.settings')
 
 application = get_asgi_application()

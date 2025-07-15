@@ -1,5 +1,5 @@
 """
-WSGI config for code_explainer_backed project.
+WSGI config for code_explainer_backend project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
